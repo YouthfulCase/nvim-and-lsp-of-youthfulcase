@@ -19,6 +19,6 @@ sw          对 ctrl + w + s --新增竖直窗口 <br>
 e           对 :nohl --取消高亮 <br>
 
 ### 插件操作 <br>
-ctrl + e    对 cmp.mapping.abort() --关闭自动补全提示
+ctrl + e    对 cmp.mapping.abort() --关闭自动补全提示<br>
 space       对 :NvimTreeToggle --开关nvim tree <br>  
 ctrl + down 对 mc.lineAddCursor(1) --多加一个光标 <br>
