@@ -1,0 +1,33 @@
+CompileFlags:
+    Add: [
+        -std=c++26,
+
+        - --target=x86_64-w64-windows-gnu,
+
+        -ID:\Assets\compilers\msys2\ucrt64\include\c++\16.1.0,
+        -ID:\Assets\compilers\msys2\ucrt64\include\c++\16.1.0\x86_64-w64-mingw32,
+        -ID:\Assets\compilers\msys2\ucrt64\include\c++\16.1.0\bits
+    ]
+
+    Remove: ["-Werror"]
+    Compiler: gcc
+
+Index:
+    Background: true
+    BuildSystem: "CMake"
+    IndexFile: ".clangd-index"
+    ImplicitDynamic: true
+    StandardLibrary: true
+
+Diagnostics:
+    ClangTidyChecks: false
+
+InlayHints:
+    Enabled: true
+    ParameterNames: true
+    DeducedTypes: true
+    Designators: true
+
+Completion:
+    AllScopes: true
+    HeaderInsertion: Never
